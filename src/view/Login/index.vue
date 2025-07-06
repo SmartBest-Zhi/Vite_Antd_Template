@@ -28,12 +28,12 @@
       <div class="login-form">
         <div class="form-group">
           <label for="username">Username:</label>
-          <input type="text" id="username" name="username" required v-model="loginData.username">
+          <a-input type="text" id="username" name="username" required v-model:value="loginData.username" />
         </div>
 
         <div class="form-group">
           <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required v-model="loginData.password">
+          <a-input type="password" id="password" name="password" required v-model:value="loginData.password" />
         </div>
         <button id="login-submit" @click="Login">Login</button>
       </div>
